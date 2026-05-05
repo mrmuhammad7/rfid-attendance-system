@@ -3,34 +3,48 @@
 ## 📁 Project Structure
 
 ```
-C:\xampp\htdocs\attendance\
-├── index.php               ← Student/Guest dashboard
-├── login.php               ← Admin login
-├── logout.php
-├── database.sql            ← Run this first in phpMyAdmin
-├── esp8266_firmware.ino    ← Upload to ESP8266
-│
-├── includes/
-│   ├── db.php              ← DB connection + helpers
-│   └── auth.php            ← Session / login logic
-│
-├── api/
-│   ├── scan.php            ← POST from ESP | GET for dashboard polling
-│   ├── stats.php           ← Attendance statistics
-│   ├── students.php        ← CRUD for students
-│   └── pending_scan.php    ← Real-time UID relay to admin pages
+C:\xampp\htdocs\attendance/
 │
 ├── admin/
-│   ├── index.php           ← Admin dashboard
-│   ├── add.php             ← Add new student via RFID scan
-│   ├── edit.php            ← Edit student via RFID scan
-│   ├── delete.php          ← Delete students with checkboxes
-│   ├── _header.php         ← Shared layout header
-│   └── _footer.php         ← Shared layout footer
+│   ├── _footer.php
+│   ├── _header.php
+│   ├── add.php
+│   ├── delete.php
+│   ├── edit.php
+│   └── index.php
 │
-└── assets/
-    ├── css/style.css
-    └── js/app.js
+├── api/
+│   ├── pending_scan.php
+│   ├── scan.php
+│   ├── stats.php
+│   └── students.php
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       ├── app.js
+│       └── theme.js
+│
+├── hardware/
+│   ├── imgs/
+│   │   ├── esp.jpg
+│   │   ├── lcd.jpg
+│   │   ├── lcdBack.jpg
+│   │   └── rfid.jpg
+│   ├── esp8266_firmware.ino
+│   └── User_Setup.h
+│
+├── includes/
+│   ├── auth.php
+│   └── db.php
+│
+├── database.sql
+├── index.php
+├── login.php
+├── logout.php
+├── README.md
+└── Setup_Guide.md
 ```
 
 ---
