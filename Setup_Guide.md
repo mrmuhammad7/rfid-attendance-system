@@ -83,7 +83,7 @@ Edit these 3 lines in `esp8266_firmware.ino`:
 ```cpp
 const char* WIFI_SSID     = "YOUR_WIFI_NAME";
 const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
-const char* SERVER_URL    = "http://10.147.37.30/attendance/api/scan.php";
+const char* SERVER_URL    = "http://your IP/attendance/api/scan.php";
 //                                   ↑ your PC's IP on same network
 ```
 
